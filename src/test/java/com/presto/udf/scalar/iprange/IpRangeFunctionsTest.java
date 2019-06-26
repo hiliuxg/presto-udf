@@ -9,8 +9,8 @@ public class IpRangeFunctionsTest {
 
     @Test
     public void testFindCountry()  {
-        Slice result = UDFGetByIpRange.eval(Slices.utf8Slice("223.104.101.190"),Slices.utf8Slice("city")) ;
-        Assert.assertEquals("中国", result.toStringUtf8());
+        Slice result = UDFGetByIpRange.eval(Slices.utf8Slice("117.136.45.19"),Slices.utf8Slice("province")) ;
+        Assert.assertEquals("江苏", result.toStringUtf8());
     }
 
 }
